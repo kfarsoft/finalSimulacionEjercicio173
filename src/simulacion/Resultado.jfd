@@ -1,0 +1,88 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq t {comp label1:::p:129:p, space :p:146:p, comp label2:::p:110:p, space ::188:x, comp label3:::p:87:p, space :p:38:p}, seq t {par t {comp label13::l::675:x, seq {comp label10::::214:x, space :p:35:p, comp label11:::p:211:p, space :p:33:p, comp label12:::p:182:p}, seq l {par l {comp label7:::p:214:p, comp label4::l:p:214:p}, space ::35:x, par l {comp label5:::p:211:p, comp label8:::::x}, space ::33:x, par l {comp label9:::::x, seq {comp label6:::p:182:p, space :0:0:x}}}}, space :p:23:p}}}}"
+					"$verticalGroup": "par l {seq {par l {seq l {space :::p, par b {comp label1::b:p:27:p, comp label2::b:p:27:p}}, comp label3::::34:x}, space :::p, par l:::p {comp label10::l::33:x, comp label11::l:::x, comp label12::l::33:x}, space ::7:x, par l {seq {comp label6:::p:30:p, space ::36:x, comp label9:::p:30:p}, par t:::p {seq {comp label5:::p:30:p, space :::x, comp label8:::p:30:p}, seq l {comp label4:::p:30:p, space s:::p, comp label7:::p:30:p}}}, space :p:11:p, comp label13:::p:69:p, space :::p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Simulacion 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Simulacion 2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Simulacion 3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 730, 360 )
+		} )
+	}
+}

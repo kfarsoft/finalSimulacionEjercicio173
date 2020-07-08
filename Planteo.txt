@@ -1,0 +1,26 @@
+------------
+EVENTOS
+------------
+- Llegada_pedido		N(20,5) Media=20, Desviacion=5 => Box-Muller
+
+- Fin_entrega			U(7, 23) => Distribucion uniforme
+
+- Reenvio_pedido		Al cabo de 1 hora luego de su primer envio y el destinatario no estaba
+
+- Realizando_pedido		Se coloca en la cola al cabo de 45 minutos esperando
+
+------------
+OBJETOS
+------------
+
+Repartidor (n)	-	{ Libre | Ocupado }
+	n = 1, 2, 3
+	
+Destinatario	-	{ Si esta | No esta }
+
+Pedidos (n)		-	{ 	Siendo_entregado 	// El repartidor esta llevando el pedido
+							| En_espera 		// En espera para ser enviado
+							| Finalizado 		// Vendria a ser un entregado
+							| En_espera_reenvio // Esta esperando 1 h luego de que el destinatario no estaba
+							| Desechado			// Luego del segundo envio que el destinatario no esta
+					}
